@@ -3,6 +3,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { IoArrowForward, IoTodaySharp } from "react-icons/io5";
+import Image from "next/image";
+
+import imgBerita from "@/public/img/berita.jpg";
 
 export default function BeritaUtama() {
   const [data, setData] = useState([]);
@@ -44,10 +47,11 @@ export default function BeritaUtama() {
 
           <div className="grid grid-cols-1 gap-7">
             {data.map((item, i) => (
-              <div className="col-span-1" key={item.id}>
+              <div className="col-span-1" key={i}>
                 <div className="rounded-lg shadow-lg">
-                  <img
-                    src="/img/berita.jpg"
+                  <Image
+                    src={imgBerita}
+                    alt="berita"
                     className="aspect-[16/10] rounded-t-lg object-cover object-center"
                   />
                   <div className="mt-5 px-5 pb-5">

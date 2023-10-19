@@ -3,6 +3,9 @@ import Link from "next/link";
 import CardNews from "../CardNews";
 import CardInfoPublik from "../CardInfoPublik";
 
+import beritaImg from "@/public/img/berita.jpg";
+import Image from "next/image";
+
 export default function Content({ data }) {
   return (
     <div className="container mx-auto px-3 py-10">
@@ -28,7 +31,7 @@ export default function Content({ data }) {
                 className="isi text-sm text-other"
                 dangerouslySetInnerHTML={{ __html: data.content }}
               ></div>
-              <img src="/img/berita.png" className="mt-4 w-full" />
+              <Image src={beritaImg} className="mt-4 w-full" alt="image" />
             </div>
           ) : (
             // INI TENTANG PROFIL DAN LAIN LAIN

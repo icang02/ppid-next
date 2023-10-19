@@ -7,6 +7,7 @@ export default function Hero({ data }) {
         <Image
           src={data.bgHero}
           className="h-full w-full object-cover object-center"
+          alt="image"
           unoptimized
         />
       </div>

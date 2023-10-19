@@ -1,5 +1,9 @@
-import calculatorBg from "@/public/images/calculator-bg.jpg";
 import Image from "next/image";
+import calculatorBg from "@/public/images/calculator-bg.jpg";
+import img1 from "@/public/img/1.png";
+import img2 from "@/public/img/2.png";
+import img3 from "@/public/img/3.png";
+import img4 from "@/public/img/4.png";
 
 export default function Tatacara() {
   return (
@@ -8,6 +12,7 @@ export default function Tatacara() {
         <Image
           src={calculatorBg}
           className="h-full w-full object-cover object-center"
+          alt="image"
           unoptimized
         />
       </div>
@@ -19,8 +24,9 @@ export default function Tatacara() {
 
         <div className="mt-12 grid grid-cols-1 gap-10 px-5">
           <div className="col-span-1">
-            <img
-              src="/img/1.png"
+            <Image
+              src={img1}
+              alt="gambar"
               className="w-full border-[5px] border-white"
             />
             <h6 className="mt-5 text-center font-bold text-white">
@@ -28,8 +34,9 @@ export default function Tatacara() {
             </h6>
           </div>
           <div className="col-span-1">
-            <img
-              src="/img/2.png"
+            <Image
+              src={img2}
+              alt="gambar"
               className="w-full border-[5px] border-white"
             />
             <h6 className="mt-5 text-center font-bold text-white">
@@ -37,8 +44,9 @@ export default function Tatacara() {
             </h6>
           </div>
           <div className="col-span-1">
-            <img
-              src="/img/3.png"
+            <Image
+              src={img3}
+              alt="gambar"
               className="w-full border-[5px] border-white"
             />
             <h6 className="mt-5 text-center font-bold text-white">
@@ -46,8 +54,9 @@ export default function Tatacara() {
             </h6>
           </div>
           <div className="col-span-1">
-            <img
-              src="/img/4.png"
+            <Image
+              src={img4}
+              alt="gambar"
               className="w-full border-[5px] border-white"
             />
             <h6 className="mt-5 text-center font-bold text-white">

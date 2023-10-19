@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import { IoArrowRedo } from "react-icons/io5";
+
+import formulirImg from "@/public/img/formulir-home.jpg";
 
 export default function FormulirUtama() {
   return (
@@ -7,7 +10,7 @@ export default function FormulirUtama() {
       <div className="container mx-auto px-3 py-32">
         <div className="grid grid-cols-1 gap-8">
           <div className="col-span-1">
-            <img src="/img/formulir-home.jpg" />
+            <Image src={formulirImg} alt="formulir" />
           </div>
           <div className="col-span-1 px-6">
             <h5 className="mb-6 text-xl font-bold text-acsent">

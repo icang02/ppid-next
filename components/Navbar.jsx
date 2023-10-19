@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+
 import { useEffect, useState } from "react";
 import { IoMenuOutline } from "react-icons/io5";
 import { IoCloseOutline } from "react-icons/io5";
 import { IoChevronDown } from "react-icons/io5";
-
 import logo from "@/public/img/ppid.png";
-import Image from "next/image";
 
 export default function Navbar() {
   const [menuClick, setMenuClick] = useState(false);
@@ -54,7 +54,7 @@ export default function Navbar() {
         } container mx-auto flex items-center justify-between  transition-all duration-500`}
       >
         <Link href="/" onClick={handleScrollToTop}>
-          <Image src={logo} width={isSticky ? "135" : "170"} />
+          <Image src={logo} width={isSticky ? "135" : "170"} alt="image" />
         </Link>
         <ul
           className={`${menuClick ? "block" : "hidden"} ${
