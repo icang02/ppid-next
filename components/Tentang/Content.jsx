@@ -25,7 +25,7 @@ export default function Content({ data }) {
           </h2>
 
           {/* INI STRUKTUR PPID */}
-          {data.path == "/struktur-ppid" ? (
+          {data.path == "/tentang/struktur-ppid" ? (
             <div>
               <div
                 className="isi text-sm text-other"
@@ -40,12 +40,14 @@ export default function Content({ data }) {
               dangerouslySetInnerHTML={{ __html: data.content }}
             ></div>
           )}
+          {/* BATASNYA */}
 
           {/* INI KHUSUS UNTUK INFORMASI PUBLIK */}
           {(data.path === "/informasi-publik/berkala" ||
             data.path === "/informasi-publik/setiap-saat") && (
             <CardInfoPublik path={data.path} />
           )}
+          {/* BATASNYA */}
 
           {/* INI KHUSUS UNTUK FORMULIR */}
           {data.path == "/formulir" && (
@@ -56,17 +58,20 @@ export default function Content({ data }) {
               LINK FORMULIR
             </Link>
           )}
+          {/* BATASNYA */}
         </div>
 
         {/* INI GARIS */}
         <div className="col-span-1">
           <hr className="mt-10" />
         </div>
+        {/* BATASNYA */}
 
-        {/* INI CARD NEWS */}
+        {/* INI CARD NEWS BERITA */}
         <div className="col-span-1">
           {data.path != "/formulir" && <CardNews />}
         </div>
+        {/* BATASNYA */}
       </div>
     </div>
   );

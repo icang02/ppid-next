@@ -8,6 +8,7 @@ export default function Hero() {
         <Image
           src={heroImg}
           className="h-[100.5vh] w-full object-cover object-center"
+          alt="image"
           unoptimized
         />
       </div>

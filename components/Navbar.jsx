@@ -93,21 +93,21 @@ export default function Navbar() {
               </Link>
               <Link
                 onClick={handleScrollToTop}
-                href="/visi-misi"
+                href="/tentang/visi-misi"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Visi & Misi
               </Link>
               <Link
                 onClick={handleScrollToTop}
-                href="/tugas-fungsi"
+                href="/tentang/tugas-fungsi"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Tugas & Fungsi
               </Link>
               <Link
                 onClick={handleScrollToTop}
-                href="/struktur-ppid"
+                href="/tentang/struktur-ppid"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Struktur PPID
@@ -173,19 +173,22 @@ export default function Navbar() {
               } flex-col text-center transition-all duration-500`}
             >
               <Link
-                href="/formulir"
+                onClick={handleScrollToTop}
+                href="/formulir/permohonan-informasi-publik"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Permohonan Informasi Publik
               </Link>
               <Link
-                href="/formulir"
+                onClick={handleScrollToTop}
+                href="/formulir/keberatan-layanan-informasi-publik"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Keberatan Layanan Informasi Publik
               </Link>
               <Link
-                href="/formulir"
+                onClick={handleScrollToTop}
+                href="/formulir/penyelesaian-sengketa-informasi-publik"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Penyelesaian Sengketa Informasi Publik
@@ -207,12 +210,14 @@ export default function Navbar() {
               } flex-col text-center transition-all duration-500`}
             >
               <Link
+                onClick={handleScrollToTop}
                 href="/profil"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
                 Laporan Akses Informasi Publik
               </Link>
               <Link
+                onClick={handleScrollToTop}
                 href="/visi-misi"
                 className="border py-3.5 tracking-wide hover:bg-[#eeeeee] hover:text-acsent"
               >
@@ -221,6 +226,7 @@ export default function Navbar() {
             </div>
 
             <a
+              onClick={handleScrollToTop}
               href="#"
               className="border py-3.5 tracking-widest hover:bg-[#eeeeee] hover:text-acsent"
             >
